@@ -1,0 +1,1386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap Icon CSS -->
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <!-- FancyBox CSS -->
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- Swiper slider CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Slick slider CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- BoxIcon  CSS -->
+    <link href="assets/css/boxicons.min.css" rel="stylesheet">
+    <!--  Style CSS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Title -->
+    <title>Point One Zero - Working File</title>
+    <link rel="icon" href="assets/img/fav-icon.svg" type="image/gif" sizes="20x20">
+<style>
+.home2-contact-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.home2-contact-section .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.home2-contact-section .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(11, 12, 12, 0.65);
+    z-index: 1;
+}
+
+.home2-contact-section > *:not(.bg-video):not(.overlay) {
+    position: relative;
+    z-index: 2;
+}
+
+.mb-150 {
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
+h1.text-anim2, h2.d-lg-block.d-none.text-anim2 {
+    color: white;
+    background-blend-mode: color-burn;
+}
+
+.poz-footer {
+  background: #0a0a0a;
+  border-top: 0.5px solid rgba(255,255,255,0.1);
+  padding: 2rem 2rem 1rem;
+}
+.poz-footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.5px solid rgba(255,255,255,0.08);
+}
+.poz-logo {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.poz-tagline {
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  margin: 2px 0 0;
+}
+.poz-contact {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.poz-contact a {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+}
+.poz-contact a:hover { color: #fff; }
+.poz-contact .sep {
+  color: rgba(255,255,255,0.18);
+}
+.poz-social a {
+  width: 28px;
+  height: 28px;
+  border: 0.5px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 14px;
+  text-decoration: none;
+}
+.poz-social a:hover { border-color: #fff; color: #fff; }
+.poz-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 1rem;
+}
+.poz-nav {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.poz-nav a {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+}
+.poz-nav a:hover { color: rgba(255,255,255,0.8); }
+.poz-copy {
+  font-size: 12px;
+  color: rgba(255,255,255,0.25);
+}
+.poz-copy a { color: inherit; text-decoration: none; }
+
+.service-page-process-section .service-page-process-wrapper .service-page-process-img {
+    max-width: 100vw;
+    min-width: 100vw;
+    overflow: hidden;
+}
+</style>
+</head>
+
+<body class="tt-magic-cursor">
+
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+
+    <!-- Back To Top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+        </svg>
+        <svg class="arrow" width="22" height="25" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0.556131 11.4439L11.8139 0.186067L13.9214 2.29352L13.9422 20.6852L9.70638 20.7061L9.76793 8.22168L3.6064 14.4941L0.556131 11.4439Z"/>
+            <path d="M23.1276 11.4999L16.0288 4.40105L15.9991 10.4203L20.1031 14.5243L23.1276 11.4999Z"/>
+        </svg>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="right-sidebar-menu two">
+    <div class="right-sidebar-close-btn">
+        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6694 3.0106C14.8839 2.78848 15.0026 2.49099 15 2.18219C14.9973 1.8734 14.8734 1.57801 14.6551 1.35966C14.4367 1.1413 14.1413 1.01744 13.8325 1.01475C13.5237 1.01207 13.2262 1.13078 13.0041 1.34531L8.00706 6.34236L3.01119 1.34531C2.90184 1.23589 2.77202 1.14907 2.62912 1.08983C2.48623 1.03058 2.33306 1.00005 2.17837 1C2.02368 0.999945 1.87049 1.03036 1.72756 1.08951C1.58462 1.14865 1.45473 1.23538 1.34531 1.34472C1.23589 1.45407 1.14907 1.58389 1.08983 1.72679C1.03058 1.86968 1.00005 2.02285 1 2.17754C0.999945 2.33223 1.03036 2.48542 1.08951 2.62835C1.14865 2.77129 1.23538 2.90118 1.34472 3.0106L6.34177 8.00765L1.34472 13.0047C1.12389 13.2257 0.99989 13.5253 1 13.8378C1.00011 14.1502 1.12432 14.4497 1.34531 14.6706C1.5663 14.8914 1.86596 15.0154 2.17837 15.0153C2.49078 15.0152 2.79036 14.891 3.01119 14.67L8.00706 9.67294L13.0041 14.67C13.2262 14.8845 13.5237 15.0032 13.8325 15.0005C14.1413 14.9979 14.4367 14.874 14.6551 14.6556C14.8734 14.4373 14.9973 14.1419 15 13.8331C15.0026 13.5243 14.8839 13.2268 14.6694 13.0047L9.67235 8.00765L14.6694 3.0106Z"></path>
+        </svg>
+    </div>
+
+    <div class="sidebar-content-wrap">
+        <h5 class="title">POINT ONE ZERO</h5>
+
+        <div class="address-area">
+            <h5>Office Location</h5>
+            <a href="#">25 Palmer Square, Princeton, NJ 08542, US</a>
+        </div>
+
+        <div class="contact-area">
+            <h5>Contact Info</h5>
+            <ul class="contact-list">
+                <li class="single-contact">
+                    <div class="icon">
+                        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path d="M9.07059 7.78198L7.89814 8.9584C7.42269 9.43552 6.58613 9.4458 6.1004 8.9584L4.9279 7.78198L0.716797 12.0068C0.873548 12.0792 1.04638 12.1225 1.23011 12.1225H12.7684C12.9522 12.1225 13.1249 12.0793 13.2816 12.0068L9.07059 7.78198Z"></path>
+                                <path d="M12.7687 2.27942H1.23039C1.04665 2.27942 0.873822 2.32267 0.717125 2.39516L5.21698 6.90995C5.21729 6.91025 5.21764 6.9103 5.21794 6.9106C5.21813 6.9108 5.21825 6.91105 5.2183 6.91131L6.68145 8.3793C6.83686 8.53471 7.16228 8.53471 7.3177 8.3793L8.78055 6.91156C8.78055 6.91156 8.7809 6.9109 8.7812 6.9106C8.7812 6.9106 8.78186 6.91025 8.78216 6.90995L13.2819 2.39513C13.1252 2.32262 12.9524 2.27942 12.7687 2.27942Z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <a href="mailto:admin@pointonezero.com">admin@pointonezero.com</a>
+                </li>
+
+                <li class="single-contact">
+                    <div class="icon">
+                        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path d="M12.8766 9.18937C12.0195 9.18937 11.1779 9.05531 10.3804 8.79176C9.98956 8.65846 9.50915 8.78075 9.27064 9.02571L7.69648 10.214C5.87091 9.23954 4.74639 8.11538 3.7852 6.30352L4.93856 4.77038C5.23821 4.47113 5.34569 4.03399 5.21692 3.62384C4.95223 2.82212 4.81777 1.98092 4.81777 1.12342C4.81781 0.503962 4.31385 0 3.69442 0H1.12339C0.503962 0 0 0.503962 0 1.12339C0 8.22363 5.77637 14 12.8766 14C13.496 14 14 13.496 14 12.8766V10.3127C14 9.69333 13.496 9.18937 12.8766 9.18937Z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <a href="tel:+16789014328">(678) 901-4328</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="contact.html" class="primary-btn1">
+            <span>Contact Us</span>
+            <span>Contact Us</span>
+        </a>
+    </div>
+</div>
+
+    <!-- header Section Start-->
+    <header class="header-area style-2 white font-alt">
+        <div class="container-fluid one d-flex flex-nowrap align-items-center justify-content-between">
+            <div class="company-logo">
+                <a href="index.html"><img alt="image" src="assets/img/header-logo-white.svg"></a>
+            </div>
+            <div class="main-menu">
+                <div class="mobile-logo-area d-lg-none d-flex align-items-center justify-content-between">
+                    <a href="index.html" class="mobile-logo-wrap">
+                        <img alt="image" src="assets/img/header-logo-white.svg">
+                    </a>
+                    <div class="menu-close-btn">
+                        <i class="bi bi-x"></i>
+                    </div>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-single-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="menu-single-item">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li class="menu-single-item">
+                        <a href="solutions.html">Tools & Accelerators</a>
+                    </li>
+                    <li class="menu-single-item">
+                        <a href="team.html">Team</a>
+                    </li>
+                    <li class="menu-single-item">
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li class="menu-single-item">
+                        <a href="career.html">Career</a>
+                    </li>
+                    <li class="menu-single-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="right-sidebar-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path
+                                d="M4.6142 0.138593C3.82636 -0.0461926 3.00645 -0.0461926 2.21861 0.138593C1.71263 0.257272 1.24984 0.514861 0.882348 0.882352C0.514858 1.24984 0.257268 1.71264 0.138589 2.21862C-0.0461965 3.00645 -0.0461965 3.82636 0.138589 4.6142C0.257268 5.12018 0.514858 5.58297 0.882348 5.95046C1.24984 6.31796 1.71263 6.57554 2.21861 6.69422C3.00645 6.87904 3.82636 6.87904 4.6142 6.69422C5.12017 6.57554 5.58297 6.31796 5.95046 5.95046C6.31795 5.58297 6.57554 5.12018 6.69422 4.6142C6.87904 3.82637 6.87904 3.00645 6.69422 2.21862C6.57554 1.71264 6.31795 1.24984 5.95046 0.882352C5.58297 0.514861 5.12017 0.257272 4.6142 0.138593ZM4.6142 9.30581C3.82636 9.12099 3.00645 9.12099 2.21861 9.30581C1.71263 9.42449 1.24984 9.68208 0.882348 10.0496C0.514858 10.4171 0.257268 10.8799 0.138589 11.3858C-0.0461965 12.1737 -0.0461965 12.9936 0.138589 13.7814C0.257268 14.2874 0.514858 14.7502 0.882348 15.1177C1.24984 15.4852 1.71263 15.7428 2.21861 15.8614C3.00645 16.0462 3.82635 16.0462 4.6142 15.8614C5.12017 15.7428 5.58297 15.4852 5.95046 15.1177C6.31795 14.7502 6.57554 14.2874 6.69422 13.7814C6.87904 12.9936 6.87904 12.1737 6.69422 11.3858C6.57554 10.8799 6.31795 10.4171 5.95046 10.0496C5.58297 9.68208 5.12017 9.42449 4.6142 9.30581ZM13.7814 0.138593C12.9936 -0.0461926 12.1737 -0.0461926 11.3858 0.138593C10.8798 0.257272 10.4171 0.514861 10.0496 0.882352C9.68207 1.24984 9.42448 1.71264 9.3058 2.21862C9.12099 3.00645 9.12099 3.82637 9.3058 4.6142C9.42448 5.12018 9.68207 5.58297 10.0496 5.95046C10.4171 6.31796 10.8798 6.57554 11.3858 6.69422C12.1737 6.87904 12.9936 6.87904 13.7814 6.69422C14.2874 6.57554 14.7502 6.31796 15.1177 5.95046C15.4852 5.58297 15.7428 5.12018 15.8614 4.6142C16.0462 3.82636 16.0462 3.00646 15.8614 2.21862C15.7428 1.71264 15.4852 1.24984 15.1177 0.882352C14.7502 0.514861 14.2874 0.257272 13.7814 0.138593ZM13.7814 9.30581C12.9936 9.12099 12.1737 9.12099 11.3858 9.30581C10.8798 9.42449 10.4171 9.68208 10.0496 10.0496C9.68207 10.4171 9.42448 10.8799 9.3058 11.3858C9.12099 12.1737 9.12099 12.9936 9.3058 13.7814C9.42448 14.2874 9.68207 14.7502 10.0496 15.1177C10.4171 15.4852 10.8798 15.7428 11.3858 15.8614C12.1737 16.0462 12.9936 16.0462 13.7814 15.8614C14.2874 15.7428 14.7502 15.4852 15.1177 15.1177C15.4852 14.7502 15.7428 14.2874 15.8614 13.7814C16.0462 12.9936 16.0462 12.1737 15.8614 11.3858C15.7428 10.8799 15.4852 10.4171 15.1177 10.0496C14.7502 9.68208 14.2874 9.42449 13.7814 9.30581Z"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sidebar-button mobile-menu-btn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path
+                                d="M1.03556 2.52631H8.41896C8.99112 2.52631 9.45456 1.96107 9.45456 1.26316C9.45456 0.565247 8.99112 0 8.41896 0H1.03556C0.463399 0 0 0.565247 0 1.26316C0 1.96107 0.463399 2.52631 1.03556 2.52631Z"/>
+                            <path
+                                d="M0.984016 9.26267H15.016C15.5597 9.26267 16 8.6974 16 7.99948C16 7.30157 15.5597 6.73633 15.016 6.73633H0.984016C0.440337 6.73633 0 7.30157 0 7.99948C0 8.6974 0.440337 9.26267 0.984016 9.26267Z"/>
+                            <path
+                                d="M15.0441 13.4736H8.22859C7.70046 13.4736 7.27271 14.0389 7.27271 14.7367C7.27271 15.4347 7.70046 15.9999 8.22859 15.9999H15.0441C15.5722 15.9999 16 15.4347 16 14.7367C16 14.0389 15.5722 13.4736 15.0441 13.4736Z"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header Section End-->
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <div class="home4-banner-section">
+                <video autoplay loop muted playsinline src="assets/video/home4-banner-video.mp4"></video>
+                <div class="banner-content-wrap">
+                    <div class="banner-wrapper">
+                        <div class="home7-banner-section mb-150">
+                            <div class="container-fluid one">
+                                <div class="row justify-content-between">
+                                    <div class="col-xl-5 col-lg-4">
+                                        <div class="banner-left-content">
+                                            <h1 class="text-anim2" data-delay="0.3">Revenue<span>Growth</span> Powered by AI </h1>
+                                            <h2 class="d-lg-none d-block text-anim2">Powered By <span>AI</span></h2>
+                                            <div class="left-content">
+                                                <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path d="M1 1H31M31 1V30.9541M31 1L1.00001 31" stroke-width="2" stroke-linecap="round" />
+                                                    </g>
+                                                </svg>
+                                                <p style="color: #d4d4d4;">We are an AI-native company transforming how businesses grow and innovate through strategy, design, and engineering</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="banner-right-content">
+                                            <h2 class="d-lg-block d-none text-anim2" data-delay="0.3">Let your bold ideas <span>bloom into business impact</span></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ↓↓↓ DO NOT TOUCH ANYTHING BELOW THIS LINE ↓↓↓ -->
+<!-- home2 About Section Start -->
+            <div class="home2-about-section mb-150" style="background: url('https://agmedias.cloud/poz/bg.mp4');">
+                <div class="container one" style="padding-top: 80px; padding-bottom: 60px;">
+                   <div class="section-title five">
+                    <div class="container-fluid one">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-1">
+                               <div class="sub-title">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M17.7341 11.7366L14.1344 15.3363C13.9647 15.5002 13.7373 15.591 13.5014 15.5889C13.2654 15.5869 13.0397 15.4922 12.8728 15.3253C12.706 15.1585 12.6113 14.9328 12.6093 14.6968C12.6072 14.4609 12.6979 14.2335 12.8619 14.0638L14.9263 11.9994H3.59974C2.64503 11.9994 1.72942 11.6201 1.05434 10.945C0.379257 10.2699 0 9.35432 0 8.39961V3.89994C0 3.66126 0.0948143 3.43236 0.263585 3.26359C0.432355 3.09481 0.661257 3 0.899935 3C1.13861 3 1.36751 3.09481 1.53629 3.26359C1.70506 3.43236 1.79987 3.66126 1.79987 3.89994V8.39961C1.79987 8.87697 1.9895 9.33477 2.32704 9.67231C2.66458 10.0099 3.12239 10.1995 3.59974 10.1995H14.9263L12.8628 8.13593C12.6988 7.9662 12.6081 7.73888 12.6102 7.50292C12.6122 7.26695 12.7069 7.04124 12.8737 6.87438C13.0406 6.70753 13.2663 6.61288 13.5023 6.61083C13.7382 6.60878 13.9656 6.69949 14.1353 6.86342L17.735 10.4632C17.8188 10.5468 17.8853 10.6461 17.9307 10.7554C17.9761 10.8647 17.9994 10.9819 17.9994 11.1003C17.9994 11.2187 17.9761 11.3359 17.9307 11.4452C17.8853 11.5546 17.8188 11.6539 17.735 11.7375L17.7341 11.7366Z"/>
+                                                </svg>
+                                              Let's Talk
+                                            </div>
+                            </div>
+                            <div class="col-xxl-10 col-lg-8">
+                                <h2 class="text_color_invert" style="font-weight:600;">Our work speaks through numbers.
+These are the business outcomes and performance metrics we help deliver.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                </div>
+                <div class="counter-section">
+                    <div class="container-fluid one">
+                        <ul class="counter-list">
+                            <li class="single-counter fade_anim" data-delay=".2" data-fade-from="top"
+                                data-ease="bounce">
+                                <h2><span class="counter_number" style="font-size: 84px;
+        letter-spacing: -5px;">24</span></h2>
+                                <span style="font-size: 36px;
+    color: black;
+    font-weight: 600;">Hours</span>
+                            </li>
+                            <li class="single-counter fade_anim" data-delay=".3" data-fade-from="top"
+                                data-ease="bounce">
+                                <h2><span class="counter_number" style="font-size: 84px;
+        letter-spacing: -5px;">10</span>X</h2>
+                                <span style="font-size: 36px;
+    color: black;
+    font-weight: 600;">Speed</span>
+                            </li>
+                            <li class="single-counter fade_anim" data-delay=".4" data-fade-from="top"
+                                data-ease="bounce">
+                                <h2><span class="counter_number" style="font-size: 84px;
+        letter-spacing: -5px;">120</span>+ <br> </h2>
+                                <span style="font-size: 36px;
+    color: black;
+    font-weight: 600;">Agents</span>
+                            </li>
+                            <li class="single-counter fade_anim" data-delay=".5" data-fade-from="top"
+                                data-ease="bounce">
+                                <h2><span class="counter_number" style="font-size: 84px;
+        letter-spacing: -5px;">50</span>%</h2>
+                                <span style="font-size: 36px;
+    color: black;
+    font-weight: 600;">Reduction.</span>
+                            </li>
+                        </ul>
+     
+                    </div>
+                </div>
+            </div>
+            <!-- home2 About Section End -->
+
+ <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter Variable', Inter, sans-serif;
+      background: #fff;
+      color: #111;
+      overflow-x: hidden;
+    }
+
+    /* ─── HERO SECTION ─── */
+    .hero-section {
+      position: relative;
+ 
+      height: 130vh; 
+    }
+
+    .hero-sticky {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* BIG HEADLINE — behind everything */
+    .hero-headline {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      pointer-events: none;
+      user-select: none;
+      transform-origin: center center;
+      will-change: transform;
+    }
+
+    .hero-headline h1 {
+      font-size: clamp(56px, 12vw, 180px);
+      font-weight: 900;
+      line-height: 1.0;
+      letter-spacing: -0.03em;
+      color: #111;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    /* DARK GRID PANEL */
+    .grid-panel {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 46vw;
+      max-width: 720px;
+      min-width: 320px;
+      z-index: 2;
+      border-radius: 4px;
+      overflow: hidden;
+      will-change: transform;
+    }
+
+    .grid-panel-inner {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      position: relative;
+      background: #0a0a0a;
+      overflow: hidden;
+    }
+
+    /* Parallax image inside panel */
+    .parallax-img {
+      position: absolute;
+      inset: -20% 0;
+      width: 100%;
+      height: 140%;
+      object-fit: cover;
+      object-position: center;
+      will-change: transform;
+    }
+
+    /* White headline CLIPPED inside panel */
+    .hero-headline-white {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .hero-headline-white h1 {
+      font-size: clamp(56px, 12vw, 180px);
+      font-weight: 900;
+      line-height: 1.0;
+      letter-spacing: -0.03em;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    /* BODY TEXT BELOW PANEL */
+    .body-panel {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 46vw;
+      max-width: 720px;
+      min-width: 320px;
+      z-index: 2;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 64px 40px 80px;
+      will-change: transform;
+    }
+
+    .body-panel p {
+      font-size: clamp(20px, 2.4vw, 32px);
+      font-weight: 500;
+      line-height: 1.4;
+      color: #888;
+      text-align: center;
+      max-width: 420px;
+      margin-bottom: 48px;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    .body-panel p.visible {
+      opacity: 1;
+    }
+
+    .down-btn {
+      width: 52px;
+      height: 52px;
+      background: #111;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.5s ease 0.3s, background 0.2s;
+      text-decoration: none;
+    }
+
+    .down-btn.visible { opacity: 1; }
+    .down-btn:hover { background: #333; }
+
+    .down-btn svg { display: block; }
+
+    /* Left/right white side columns */
+    .side-col {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: calc((100vw - 46vw) / 2);
+      background: #fff;
+      z-index: 0;
+    }
+    .side-col.left { left: 0; }
+    .side-col.right { right: 0; }
+
+    /* ─── NEXT SECTION ─── */
+    .next-section {
+      padding: 120px 72px 140px;
+      text-align: center;
+      border-top: 1px solid #e8e8e8;
+    }
+
+    .next-section h2 {
+      font-size: clamp(48px, 7vw, 100px);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: #111;
+      margin-bottom: 24px;
+    }
+
+    .next-section p {
+      font-size: 18px;
+      color: #666;
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+  </style>
+<!-- home3 Video Banner Section Start -->
+            <div class="home3-video-banner-section mb-150">
+                <video autoplay loop muted playsinline src="assets/video/home2-video.mp4"></video>
+                <div class="video-content-area">
+                    <div class="container-fluid one">
+                        <div class="video-content-wrap">
+                            <h2 class="text-anim" data-delay="0.1">From Prototype to Production</h2>
+                            <div class="video-btn fade_anim" data-delay=".2" data-ease="bounce" data-fade-from="top">
+                                <a href="contact.html" class="primary-btn1">
+                                    <span>
+                                        Start Your Journey
+                                    </span>
+                                    <span>
+                                        Start Your Journey
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- home3 Video Banner Section End -->
+
+
+            <div class="home3-partner-section pb-150 mb-150">
+                <div class="container one">
+                      <div class="section-title text-center">
+                                <h2 class="text-anim" class="text_color_invert" style="font-size:85px; font-weight:600; margin-bottom:40px;">AI Ecosystem
+</h2>
+                            </div>
+                    <ul class="partner-list fade_anim" data-delay=".3" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <li class="single-partner">
+                            <img src="assets/img/home3/claude-logo.png" alt="Claude" style="width:170px;height:35px;object-fit:contain;">
+                        </li>
+                        <li class="single-partner">
+                            <img src="assets/img/home3/adobe-logo.png" alt="Adobe" style="width:170px;height:35px;object-fit:contain;">
+                        </li>
+                        <li class="single-partner">
+                            <img src="assets/img/home3/azure-logo.png" alt="Azure" style="width:170px;height:35px;object-fit:contain;">
+                        </li>
+                        <li class="single-partner">
+                            <img src="assets/img/home3/cursor-logo.png" alt="Cursor" style="width:170px;height:35px;object-fit:contain;">
+                        </li>
+                        <li class="single-partner">
+                            <img src="assets/img/home3/gemini-logo.png" alt="Gemini" style="width:170px;height:35px;object-fit:contain;">
+                        </li>
+                        <li class="single-partner">
+                            <img src="assets/img/home3/hubspot-logo.png" alt="HubSpot" style="width:170px;height:35px;object-fit:contain;">
+                        </li>
+                        <li class="single-partner">
+                            <img src="assets/img/home3/jira-logo.png" alt="Jira" style="width:170px;height:35px;object-fit:contain;">
+                        </li>
+                        <li class="single-partner">
+                            <img src="assets/img/home3/openai-logo.png" alt="OpenAI" style="width:170px;height:35px;object-fit:contain;">
+                        </li>
+                        <li class="single-partner">
+                            <img src="assets/img/home3/perplexity-logo.png" alt="Perplexity" style="width:170px;height:35px;object-fit:contain;">
+                        </li>
+                        <li class="single-partner">
+                            <img src="assets/img/home3/semrush-logo.png" alt="SEMrush" style="width:170px;height:35px;object-fit:contain;">
+                        </li>
+                        <li class="single-partner">
+                            <img src="assets/img/home3/notebooklm-logo.png" alt="NotebookLM" style="width:170px;height:35px;object-fit:contain;">
+                        </li>
+                        <li class="single-partner">
+                            <img src="assets/img/home3/obsidian-logo.png" alt="Obsidian" style="width:170px;height:35px;object-fit:contain;">
+                        </li>
+                        <li class="single-partner">
+                            <img src="assets/img/home3/aws-logo.png" alt="AWS" style="width:320px;height:75px;object-fit:contain;">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <style>
+
+                
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg-light: #ffffff;
+      --bg-dark: #1a1a1a;
+      --accent: #3A7CA5;
+      --text-light: #111;
+      --text-muted: #555;
+      --card-bg: #1e1e1e;
+      --card-hover-1: #1c3e57;
+      --card-hover-2: #1c3e57;
+      --card-hover-3: #1c3e57;
+      --divider: rgba(255,255,255,0.15);
+    }
+
+   
+section.section.R {
+    padding: 32px 36px 140px;
+    display: grid;
+      grid-template-columns: 360px 1fr;
+      min-height: 100vh;
+}
+    
+
+    /* LEFT PANEL */
+    .intro {
+      background: var(--bg-light);
+      padding: 56px 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .intro-content { flex: 1; display: flex; flex-direction: column; gap: 36px; }
+
+    .brand {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .brand-name {
+     
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-light);
+    }
+
+    .brand-mark {
+      width: 18px;
+      height: 18px;
+      border-top: 2px solid var(--accent);
+      border-right: 2px solid var(--accent);
+    }
+
+    .headline {
+   
+      font-weight: 700;
+      font-size: clamp(22px, 2.2vw, 28px);
+      line-height: 1.25;
+      color: var(--text-light);
+      max-width: 260px;
+    }
+
+    .body-text {
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-muted);
+      max-width: 280px;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-light);
+      text-decoration: none;
+      margin-top: auto;
+      padding-top: 40px;
+      transition: color 0.2s;
+    }
+
+    .cta svg {
+      transition: transform 0.25s ease;
+    }
+
+    .cta:hover { color: var(--accent); }
+    .cta:hover svg { transform: translate(3px, 3px); }
+
+    /* CARDS GRID */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 48px 40px 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: default;
+      transition: background 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+      position: relative;
+      overflow: hidden;
+      margin:10px;
+      border-radius:0px!important;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      background: radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.04) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .card:hover::before { opacity: 1; }
+
+    .card:nth-child(1):hover { background: var(--card-hover-1); }
+    .card:nth-child(2):hover { background: var(--card-hover-2); }
+    .card:nth-child(3):hover { background: var(--card-hover-3); }
+
+    .card-top { flex: 1; }
+
+    .card-title {
+     
+      font-weight: 700;
+      font-size: clamp(20px, 1.8vw, 26px);
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 32px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.55);
+      transition: color 0.3s;
+    }
+
+    .card:hover .card-desc { color: rgba(255,255,255,0.75); }
+
+    .card-divider {
+      height: 1px;
+      background: var(--divider);
+      margin: 36px 0 28px;
+    }
+
+    .card-label {
+     
+      font-weight: 800;
+      font-size: clamp(22px, 2vw, 28px);
+      color: #fff;
+      letter-spacing: 0.02em;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .section { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: repeat(3, 1fr); }
+      .intro { padding: 48px 36px; min-height: auto; }
+    }
+
+    @media (max-width: 768px) {
+      .section { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr; }
+      .card { padding: 40px 28px; }
+      .intro { padding: 40px 28px; }
+    }
+  </style>
+
+<section >
+
+     <div class="container one">
+                    <div class="row justify-content-center mb-70">
+                        <div class="col-xl-12 col-lg-12 col-md-10">
+                            <div class="section-title text-center">
+                                <h2 class="text-anim" class="text_color_invert" style="font-size:85px; font-weight:600; margin-bottom:40px;">Your goals, our priority
+</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+        </section>
+
+
+
+   <section class="section R">
+
+    <!-- Left intro panel -->
+    <div class="intro">
+      <div class="intro-content">
+        <div class="brand">
+          <span class="brand-name">Point One Zero</span>
+          <div class="brand-mark"></div>
+        </div>
+
+        <h2 class="headline">Our name captures what sets us apart.</h2>
+
+        <p class="body-text">
+          Every transformation begins with a clear point of intent that moves fast and creates real impact. The moment where clarity, intent, and execution converge to drive change.
+        </p>
+      </div>
+
+      <a href="#" class="cta">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2h10v10M2 12L12 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Let's talk
+      </a>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card">
+        <div class="card-top">
+          <h3 class="card-title">Sharper Tip of the Sphere</h3>
+          <p class="card-desc">We operate at the intersection point of strategy, design, and AI that gives direction, momentum and velocity.</p>
+        </div>
+        <div>
+          <div class="card-divider"></div>
+          <div class="card-label">POINT</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <h3 class="card-title">The Collective</h3>
+          <p class="card-desc">We work collaboratively as part of one team bringing together domain experts, strategists, designers, and engineers into agile pods that co-create and scale value.</p>
+        </div>
+        <div>
+          <div class="card-divider"></div>
+          <div class="card-label">ONE</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <h3 class="card-title">Zero-Based Model</h3>
+          <p class="card-desc">Our lean model reflects the AI-native future of work and the shifting labor economics of talent. It is distilled to what's essential to deliver outcomes that matter.</p>
+        </div>
+        <div>
+          <div class="card-divider"></div>
+          <div class="card-label">ZERO</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+           
+
+            <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter Variable', Inter, sans-serif;
+      background: #fff;
+      color: #111;
+    }
+.footer-section .company-logo-area .company-logo img {
+    max-width: 294px!important;
+}
+
+    .process-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      padding: 80px 72px;
+      min-height: 100vh;
+      align-items: start;
+    }
+
+    /* LEFT */
+    .process-left {
+      padding-right: 64px;
+      position: sticky;
+      top: 80px;
+    }
+
+    .process-left h1 {
+      font-size: clamp(64px, 8vw, 108px);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      color: #111;
+      margin-bottom: 40px;
+    }
+
+    .process-left h1 span {
+      display: block;
+      padding-left: 80px;
+    }
+
+    .process-left p {
+      font-size: 15px;
+      line-height: 1.75;
+      color: #444;
+      max-width: 460px;
+      margin-bottom: 56px;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #111;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .cta svg { transition: transform 0.25s ease; }
+    .cta:hover { color: #6b21f4; }
+    .cta:hover svg { transform: translate(3px, 3px); }
+
+    /* RIGHT */
+    .process-right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .process-item {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 0 20px;
+      padding: 36px 0;
+      border-bottom: 1px solid #e8e8e8;
+      position: relative;
+    }
+
+    .process-item:first-child {
+      border-top: 1px solid #e8e8e8;
+    }
+
+    /* corner mark top-right */
+    .process-item::after {
+      content: '';
+      position: absolute;
+      top: 16px;
+      right: 0;
+      width: 12px;
+      height: 12px;
+      border-top: 2px solid #6b21f4;
+      border-right: 2px solid #6b21f4;
+    }
+
+    .step-num {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #d0d0d0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 600;
+      color: #777;
+      letter-spacing: 0.03em;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .step-body h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+
+    .step-body p {
+      font-size: 14px;
+      line-height: 1.75;
+      color: #555;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .process-section {
+        grid-template-columns: 1fr;
+        padding: 56px 32px;
+      }
+      .process-left {
+        position: static;
+        padding-right: 0;
+        margin-bottom: 48px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .process-section { padding: 48px 20px; }
+      .process-left h1 { font-size: 64px; }
+      .process-left h1 span { padding-left: 40px; }
+    }
+  </style>
+
+            <!-- Service Page Process Section Start -->
+            <div class="service-page-process-section mb-150">
+                <div class="service-page-process-wrapper">
+                    
+                    <div class="service-page-process-img">
+                        <video autoplay muted loop playsinline>
+                            <source src="assets/video/home3-video.mp4" type="video/mp4">
+                        </video>
+                        <div class="process-video-overlay">
+                            <h2 class="process-video-title">Our Process!</h2>
+                        </div>
+                    </div>
+                    <div class="process-wrap">
+                        <div class="container-fluid one">
+                            <div class="process-and-vector-area">
+                                <div class="service-page-process-vector">
+                                    <img src="assets/img/innerpages/service-page-process-section-vector.png" alt="" class="line-vector">
+                                </div>
+                                <div class="process-list">
+    <div class="single-process">
+        <span class="step-no">01</span>
+        <h2>Innovation & Strategy</h2>
+        <p>Innovation and strategy work together — turning ideas into value through clear choices on where to compete, how to win, and how to prioritize what matters most with a business case.</p>
+    </div>
+    <div class="single-process">
+        <span class="step-no">02</span>
+        <h2>Design & Prototyping</h2>
+        <p>Ideas move fast through synthetic user research, experience design, and real-time prototyping. These design sprints on steroids turn insight into action and validate what works before development begins.</p>
+    </div>
+    <div class="single-process">
+        <span class="step-no">03</span>
+        <h2>Development & Integration</h2>
+        <p>Engineer and develop AI-powered systems connected with system of records, data platforms, APIs and business services to work seamlessly across the enterprise ecosystem.</p>
+    </div>
+    <div class="single-process">
+        <span class="step-no">04</span>
+        <h2>Launch & Learn</h2>
+        <p>Manage launch, support, and monitor as the solution moves into production. Through continuous learning, the solution evolves with new insights to stay adaptable, and aligned with business goals.</p>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Page Process Section End -->
+   <!-- home4 Service Section Start-->
+<div class="home4-service-section mb-150" style="margin-bottom: 0;">
+    <div class="service-title-area mb-130">
+        <div class="container-fluid one">
+            <div class="section-title two">
+                <span>Creative Services</span>
+                <h2 class="text_color_invert">Strategy & design to content and technology—we turn your vision into reality.</h2>
+            </div>
+        </div>
+    </div>
+    <div class="service-wrapper">
+        <div class="accordion mb-70" id="accordionService">
+            <div class="accordion-item fade_anim" data-delay=".2" data-fade-from="top">
+                <div class="accordion-header" id="serviceheadingOne" role="button" data-bs-toggle="collapse" data-bs-target="#servicecollapseOne" aria-expanded="true" aria-controls="servicecollapseOne">
+                    <span class="service-no">01</span>
+                    <div class="accordion-button">
+                        <h2>Innovation & Strategy</h2>
+                    </div>
+                </div>
+                <div id="servicecollapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionService">
+                    <div class="accordion-body">
+                        <div class="service-content">
+                            <p>Innovation and strategy work together — turning ideas into value through clear choices on where to compete, how to win, and how to prioritize what matters most with a business case.</p>
+                            <a href="service-details.html" class="service-btn">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.7637 10.4323L12.5639 13.6321C12.413 13.7778 12.211 13.8585 12.0012 13.8566C11.7915 13.8548 11.5908 13.7707 11.4425 13.6224C11.2942 13.4741 11.2101 13.2734 11.2083 13.0637C11.2064 12.8539 11.2871 12.6519 11.4328 12.501L13.2678 10.6659H3.19977C2.35114 10.6659 1.53726 10.3288 0.93719 9.72874C0.337117 9.12866 0 8.31479 0 7.46616V3.46645C0 3.25429 0.0842794 3.05082 0.234298 2.9008C0.384316 2.75078 0.587784 2.6665 0.799942 2.6665C1.0121 2.6665 1.21557 2.75078 1.36559 2.9008C1.5156 3.05082 1.59988 3.25429 1.59988 3.46645V7.46616C1.59988 7.89047 1.76844 8.29741 2.06848 8.59745C2.36852 8.89748 2.77545 9.06604 3.19977 9.06604H13.2678L11.4336 7.23177C11.2879 7.0809 11.2072 6.87884 11.2091 6.6691C11.2109 6.45935 11.295 6.25872 11.4433 6.1104C11.5916 5.96209 11.7923 5.87796 12.002 5.87613C12.2118 5.87431 12.4138 5.95494 12.5647 6.10066L15.7645 9.30043C15.839 9.37473 15.8981 9.46301 15.9384 9.56019C15.9787 9.65738 15.9995 9.76157 15.9995 9.86679C15.9995 9.97201 15.9787 10.0762 15.9384 10.1734C15.8981 10.2706 15.839 10.3588 15.7645 10.4331L15.7637 10.4323Z"/>
+                                </svg>
+                                Discover More
+                            </a>
+                        </div>
+                        <div class="service-img-wrap">
+                            <img src="assets/img/home3/innovation-strategy.png" alt="Innovation & Strategy" style="max-width:650px;width:100%;object-fit:cover;border-radius:8px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item fade_anim" data-delay=".3" data-fade-from="top">
+                <div class="accordion-header collapsed" id="serviceheadingTwo" role="button" data-bs-toggle="collapse" data-bs-target="#servicecollapseTwo" aria-expanded="false" aria-controls="servicecollapseTwo">
+                    <span class="service-no">02</span>
+                    <div class="accordion-button">
+                        <h2>Design & Prototyping</h2>
+                    </div>
+                </div>
+                <div id="servicecollapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionService">
+                    <div class="accordion-body">
+                        <div class="service-content">
+                            <p>Ideas move fast through synthetic user research, experience design, and real-time prototyping. These design sprints on steroids turn insight into action and validate what works before development begins.</p>
+                            <a href="service-details.html" class="service-btn">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.7637 10.4323L12.5639 13.6321C12.413 13.7778 12.211 13.8585 12.0012 13.8566C11.7915 13.8548 11.5908 13.7707 11.4425 13.6224C11.2942 13.4741 11.2101 13.2734 11.2083 13.0637C11.2064 12.8539 11.2871 12.6519 11.4328 12.501L13.2678 10.6659H3.19977C2.35114 10.6659 1.53726 10.3288 0.93719 9.72874C0.337117 9.12866 0 8.31479 0 7.46616V3.46645C0 3.25429 0.0842794 3.05082 0.234298 2.9008C0.384316 2.75078 0.587784 2.6665 0.799942 2.6665C1.0121 2.6665 1.21557 2.75078 1.36559 2.9008C1.5156 3.05082 1.59988 3.25429 1.59988 3.46645V7.46616C1.59988 7.89047 1.76844 8.29741 2.06848 8.59745C2.36852 8.89748 2.77545 9.06604 3.19977 9.06604H13.2678L11.4336 7.23177C11.2879 7.0809 11.2072 6.87884 11.2091 6.6691C11.2109 6.45935 11.295 6.25872 11.4433 6.1104C11.5916 5.96209 11.7923 5.87796 12.002 5.87613C12.2118 5.87431 12.4138 5.95494 12.5647 6.10066L15.7645 9.30043C15.839 9.37473 15.8981 9.46301 15.9384 9.56019C15.9787 9.65738 15.9995 9.76157 15.9995 9.86679C15.9995 9.97201 15.9787 10.0762 15.9384 10.1734C15.8981 10.2706 15.839 10.3588 15.7645 10.4331L15.7637 10.4323Z"/>
+                                </svg>
+                                Discover More
+                            </a>
+                        </div>
+                        <div class="service-img-wrap">
+                            <img src="assets/img/home3/design-prototyping.png" alt="Design & Prototyping" style="max-width:650px;width:100%;object-fit:cover;border-radius:8px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item fade_anim" data-delay=".4" data-fade-from="top">
+                <div class="accordion-header collapsed" id="serviceheadingThree" role="button" data-bs-toggle="collapse" data-bs-target="#servicecollapseThree" aria-expanded="false" aria-controls="servicecollapseThree">
+                    <span class="service-no">03</span>
+                    <div class="accordion-button">
+                        <h2>Development & Integration</h2>
+                    </div>
+                </div>
+                <div id="servicecollapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionService">
+                    <div class="accordion-body">
+                        <div class="service-content">
+                            <p>Engineer and develop AI-powered systems connected with system of records, data platforms, APIs and business services to work seamlessly across the enterprise ecosystem.</p>
+                            <a href="service-details.html" class="service-btn">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.7637 10.4323L12.5639 13.6321C12.413 13.7778 12.211 13.8585 12.0012 13.8566C11.7915 13.8548 11.5908 13.7707 11.4425 13.6224C11.2942 13.4741 11.2101 13.2734 11.2083 13.0637C11.2064 12.8539 11.2871 12.6519 11.4328 12.501L13.2678 10.6659H3.19977C2.35114 10.6659 1.53726 10.3288 0.93719 9.72874C0.337117 9.12866 0 8.31479 0 7.46616V3.46645C0 3.25429 0.0842794 3.05082 0.234298 2.9008C0.384316 2.75078 0.587784 2.6665 0.799942 2.6665C1.0121 2.6665 1.21557 2.75078 1.36559 2.9008C1.5156 3.05082 1.59988 3.25429 1.59988 3.46645V7.46616C1.59988 7.89047 1.76844 8.29741 2.06848 8.59745C2.36852 8.89748 2.77545 9.06604 3.19977 9.06604H13.2678L11.4336 7.23177C11.2879 7.0809 11.2072 6.87884 11.2091 6.6691C11.2109 6.45935 11.295 6.25872 11.4433 6.1104C11.5916 5.96209 11.7923 5.87796 12.002 5.87613C12.2118 5.87431 12.4138 5.95494 12.5647 6.10066L15.7645 9.30043C15.839 9.37473 15.8981 9.46301 15.9384 9.56019C15.9787 9.65738 15.9995 9.76157 15.9995 9.86679C15.9995 9.97201 15.9787 10.0762 15.9384 10.1734C15.8981 10.2706 15.839 10.3588 15.7645 10.4331L15.7637 10.4323Z"/>
+                                </svg>
+                                Discover More
+                            </a>
+                        </div>
+                        <div class="service-img-wrap">
+                            <img src="assets/img/home3/development-integration.png" alt="Development & Integration" style="max-width:650px;width:100%;object-fit:cover;border-radius:8px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item fade_anim" data-delay=".5" data-fade-from="top">
+                <div class="accordion-header collapsed" id="serviceheadingFour" role="button" data-bs-toggle="collapse" data-bs-target="#servicecollapseFour" aria-expanded="false" aria-controls="servicecollapseFour">
+                    <span class="service-no">04</span>
+                    <div class="accordion-button">
+                        <h2>Launch & Learn</h2>
+                    </div>
+                </div>
+                <div id="servicecollapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionService">
+                    <div class="accordion-body">
+                        <div class="service-content">
+                            <p>Manage launch, support, and monitor as the solution moves into production. Through continuous learning, the solution evolves with new insights to stay adaptable, and aligned with business goals.</p>
+                            <a href="service-details.html" class="service-btn">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.7637 10.4323L12.5639 13.6321C12.413 13.7778 12.211 13.8585 12.0012 13.8566C11.7915 13.8548 11.5908 13.7707 11.4425 13.6224C11.2942 13.4741 11.2101 13.2734 11.2083 13.0637C11.2064 12.8539 11.2871 12.6519 11.4328 12.501L13.2678 10.6659H3.19977C2.35114 10.6659 1.53726 10.3288 0.93719 9.72874C0.337117 9.12866 0 8.31479 0 7.46616V3.46645C0 3.25429 0.0842794 3.05082 0.234298 2.9008C0.384316 2.75078 0.587784 2.6665 0.799942 2.6665C1.0121 2.6665 1.21557 2.75078 1.36559 2.9008C1.5156 3.05082 1.59988 3.25429 1.59988 3.46645V7.46616C1.59988 7.89047 1.76844 8.29741 2.06848 8.59745C2.36852 8.89748 2.77545 9.06604 3.19977 9.06604H13.2678L11.4336 7.23177C11.2879 7.0809 11.2072 6.87884 11.2091 6.6691C11.2109 6.45935 11.295 6.25872 11.4433 6.1104C11.5916 5.96209 11.7923 5.87796 12.002 5.87613C12.2118 5.87431 12.4138 5.95494 12.5647 6.10066L15.7645 9.30043C15.839 9.37473 15.8981 9.46301 15.9384 9.56019C15.9787 9.65738 15.9995 9.76157 15.9995 9.86679C15.9995 9.97201 15.9787 10.0762 15.9384 10.1734C15.8981 10.2706 15.839 10.3588 15.7645 10.4331L15.7637 10.4323Z"/>
+                                </svg>
+                                Discover More
+                            </a>
+                        </div>
+                        <div class="service-img-wrap">
+                            <img src="assets/img/home3/launch-learn.png" alt="Launch & Learn" style="max-width:650px;width:100%;object-fit:cover;border-radius:8px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- home4 Service Section End-->
+
+            <!-- home1 Footer Section Start-->
+            <footer class="poz-footer">
+              <div class="poz-footer-top">
+                <div>
+                  <a href="index.html" class="poz-logo">Point One Zero</a>
+                  <p class="poz-tagline">Let's bring your vision to life</p>
+                </div>
+                <div class="poz-contact">
+                  <a href="#">25 Palmer Square, Princeton, NJ 08542, US</a>
+                  <span class="sep">·</span>
+                  <a href="mailto:admin@pointonezero.com">admin@pointonezero.com</a>
+                  <span class="sep">·</span>
+                  <a href="tel:6789014328">(678) 901-4328</a>
+                  <div class="poz-social">
+                    <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="poz-footer-bottom">
+                <ul class="poz-nav">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="solutions.html">Tools & Accelerators</a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href="about.html">Team</a></li>
+                  <li><a href="career.html">Careers</a></li>
+                  <li><a href="contact-me.html">Contact Us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms &amp; Conditions</a></li>
+                </ul>
+                <p class="poz-copy">&#169; Copyright 2026 <a href="#">Point One Zero</a> &middot; All Rights Reserved.</p>
+              </div>
+            </footer>
+            <!-- home1 Footer Section End-->
+        </div>
+    </div>
+    
+
+    <!--  Main jQuery  -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    
+    <script>
+  const heroSection = document.getElementById('hero');
+  const gridPanel = document.getElementById('gridPanel');
+  const gridPanelInner = document.getElementById('gridPanelInner');
+  const headlineBlack = document.getElementById('headlineBlack');
+  const headlineWhite = document.getElementById('headlineWhite');
+  const bodyPanel = document.getElementById('bodyPanel');
+  const bodyText = document.getElementById('bodyText');
+  const downBtn = document.getElementById('downBtn');
+  const parallaxImg = document.getElementById('parallaxImg');
+
+  // ── Sync white headline position to panel ──
+  function syncWhiteHeadline() {
+    const panelRect = gridPanel.getBoundingClientRect();
+    const blackH1s = headlineBlack.querySelectorAll('h1');
+    const whiteH1s = headlineWhite.querySelectorAll('h1');
+
+    blackH1s.forEach((bh, i) => {
+      const bRect = bh.getBoundingClientRect();
+      const relTop = bRect.top - panelRect.top;
+      whiteH1s[i].style.position = 'absolute';
+      whiteH1s[i].style.top = relTop + 'px';
+      whiteH1s[i].style.left = '0';
+      whiteH1s[i].style.right = '0';
+      whiteH1s[i].style.textAlign = 'center';
+    });
+  }
+
+  // ── Scroll animation ──
+  function onScroll() {
+    const sectionTop = heroSection.getBoundingClientRect().top + window.scrollY;
+    const scrolled = window.scrollY - sectionTop;
+    const totalScroll = heroSection.offsetHeight - window.innerHeight;
+    const progress = Math.max(0, Math.min(1, scrolled / totalScroll));
+
+    // Panel: starts below center, scrolls up
+    const panelH = gridPanelInner.offsetHeight;
+    const bodyH = bodyPanel.offsetHeight;
+    const totalH = panelH + bodyH;
+
+    // Initial position: panel centered vertically at vp center
+    const startY = (window.innerHeight - panelH) / 2;
+    // End position: panel + body fully scrolled off top
+    const endY = -totalH - 80;
+
+    const panelY = startY + (endY - startY) * progress;
+    gridPanel.style.top = panelY + 'px';
+
+    // Image parallax: moves at 35% speed relative to panel (slower = deeper parallax)
+    const imgShift = progress * 80; // px shift from top
+    parallaxImg.style.transform = `translateY(${imgShift}px)`;
+
+    // Headline: scale from 1 → 0.5 AND translate up with parallax
+    // Scale shrinks as panel rises — matches screenshot comparison
+    const scaleStart = 1;
+    const scaleEnd = 0.52;
+    const currentScale = scaleStart + (scaleEnd - scaleStart) * progress;
+
+    const headlineEndY = (endY - startY) * 0.55;
+    const headlineY = headlineEndY * progress;
+    headlineBlack.style.transform = `translateY(${headlineY}px) scale(${currentScale})`;
+
+    // Show body text after panel scrolls up past center
+    const showBody = progress > 0.45;
+    bodyText.classList.toggle('visible', showBody);
+    downBtn.classList.toggle('visible', showBody);
+
+    syncWhiteHeadline();
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
+</script>
+    
+    <!-- Popper and Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Swiper slider JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <!-- Waypoints JS -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- Counterup JS -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Marquee  JS -->
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <!-- Gsap  JS -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/Draggable.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/ScrambleTextPlugin.min.js"></script>
+    <!-- FancyBox  JS -->
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/confetti.browser.min.js"></script>
+    <script src="assets/js/three.js"></script>
+    <script src="assets/js/hover-effect.umd.js"></script>
+    <!-- Theme Switcher JS -->
+    <script src="assets/js/theme_switcher_to_light.js"></script>
+    <!-- Custom JS -->
+   <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

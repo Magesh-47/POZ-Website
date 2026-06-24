@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap Icon CSS -->
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <!-- FancyBox CSS -->
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- Swiper slider CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Slick slider CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- BoxIcon  CSS -->
+    <link href="assets/css/boxicons.min.css" rel="stylesheet">
+    <!--  Style CSS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Title -->
+    <title>Point One Zero - Working File</title>
+    <link rel="icon" href="assets/img/fav-icon.svg" type="image/gif" sizes="20x20">
+    <style>
+/* — Reset for contact section — */
+.contact-section-wrap *,
+.contact-section-wrap *::before,
+.contact-section-wrap *::after {
+  box-sizing: border-box;
+}
+
+/* — Two-column card — */
+.contact-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.10);
+  min-height: 680px;
+}
+
+/* — LEFT PANEL — */
+.contact-left-panel {
+  background: #0d0d0d;
+  padding: 52px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.contact-eyebrow {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.contact-left-panel h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.3;
+  margin-top: 8px;
+}
+
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ci-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.contact-info-list a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-info-list a:hover {
+  color: #ffffff;
+}
+
+.contact-map-embed {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 200px;
+  border: 0.5px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-map-embed iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  border: 0;
+  display: block;
+  filter: grayscale(1) invert(1);
+}
+
+/* — RIGHT PANEL — */
+.contact-right-panel {
+  background: #ffffff;
+  padding: 52px 44px;
+  overflow-y: auto;
+}
+
+.contact-right-panel h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 14px;
+}
+
+/* — Interest tags — */
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.interest-tag {
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1.5px solid #dddddd;
+  background: #ffffff;
+  color: #444444;
+  transition: all 0.18s;
+  user-select: none;
+}
+
+.interest-tag:hover {
+  border-color: #999999;
+  color: #111111;
+}
+
+.interest-tag.active {
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
+/* — Form grid — */
+.contact-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-form-grid .full-col {
+  grid-column: 1 / -1;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #555555;
+  letter-spacing: 0.04em;
+}
+
+.form-field input,
+.form-field textarea {
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #111111;
+  background: #fafafa;
+  outline: none;
+  transition: border-color 0.18s;
+  font-family: inherit;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: #999999;
+  background: #ffffff;
+}
+
+.form-field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* — Agree checkbox — */
+.agree-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.agree-row input[type="checkbox"] {
+  margin-top: 3px;
+  accent-color: #111111;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.agree-row label {
+  font-size: 12px;
+  color: #666666;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.agree-row a {
+  color: #111111;
+}
+
+/* — Submit button — */
+.contact-submit-btn {
+  margin-top: 22px;
+  width: 100%;
+  padding: 13px;
+  background: #111111;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: background 0.18s;
+  font-family: inherit;
+}
+
+.contact-submit-btn:hover {
+  background: #333333;
+}
+
+/* — Responsive — */
+@media (max-width: 820px) {
+  .contact-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-left-panel {
+    padding: 40px 28px;
+  }
+
+  .contact-right-panel {
+    padding: 40px 28px;
+  }
+
+  .contact-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-grid .full-col {
+    grid-column: 1;
+  }
+}
+
+.poz-footer {
+  background: #0a0a0a;
+  border-top: 0.5px solid rgba(255,255,255,0.1);
+  padding: 2rem 2rem 1rem;
+}
+.poz-footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.5px solid rgba(255,255,255,0.08);
+}
+.poz-logo {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.poz-tagline {
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  margin: 2px 0 0;
+}
+.poz-contact {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.poz-contact a {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+}
+.poz-contact a:hover { color: #fff; }
+.poz-contact .sep {
+  color: rgba(255,255,255,0.18);
+}
+.poz-social a {
+  width: 28px;
+  height: 28px;
+  border: 0.5px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 14px;
+  text-decoration: none;
+}
+.poz-social a:hover { border-color: #fff; color: #fff; }
+.poz-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 1rem;
+}
+.poz-nav {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.poz-nav a {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+}
+.poz-nav a:hover { color: rgba(255,255,255,0.8); }
+.poz-copy {
+  font-size: 12px;
+  color: rgba(255,255,255,0.25);
+}
+.poz-copy a { color: inherit; text-decoration: none; }
+
+.service-page-process-section .service-page-process-wrapper .service-page-process-img {
+    max-width: 100vw;
+    min-width: 100vw;
+    overflow: hidden;
+}
+    </style>
+</head>
+
+<body class="tt-magic-cursor">
+
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+
+    <!-- Back To Top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+        </svg>
+        <svg class="arrow" width="22" height="25" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.556131 11.4439L11.8139 0.186067L13.9214 2.29352L13.9422 20.6852L9.70638 20.7061L9.76793 8.22168L3.6064 14.4941L0.556131 11.4439Z"/>
+            <path d="M23.1276 11.4999L16.0288 4.40105L15.9991 10.4203L20.1031 14.5243L23.1276 11.4999Z"/>
+        </svg>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="right-sidebar-menu two">
+    <div class="right-sidebar-close-btn">
+        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6694 3.0106C14.8839 2.78848 15.0026 2.49099 15 2.18219C14.9973 1.8734 14.8734 1.57801 14.6551 1.35966C14.4367 1.1413 14.1413 1.01744 13.8325 1.01475C13.5237 1.01207 13.2262 1.13078 13.0041 1.34531L8.00706 6.34236L3.01119 1.34531C2.90184 1.23589 2.77202 1.14907 2.62912 1.08983C2.48623 1.03058 2.33306 1.00005 2.17837 1C2.02368 0.999945 1.87049 1.03036 1.72756 1.08951C1.58462 1.14865 1.45473 1.23538 1.34531 1.34472C1.23589 1.45407 1.14907 1.58389 1.08983 1.72679C1.03058 1.86968 1.00005 2.02285 1 2.17754C0.999945 2.33223 1.03036 2.48542 1.08951 2.62835C1.14865 2.77129 1.23538 2.90118 1.34472 3.0106L6.34177 8.00765L1.34472 13.0047C1.12389 13.2257 0.99989 13.5253 1 13.8378C1.00011 14.1502 1.12432 14.4497 1.34531 14.6706C1.5663 14.8914 1.86596 15.0154 2.17837 15.0153C2.49078 15.0152 2.79036 14.891 3.01119 14.67L8.00706 9.67294L13.0041 14.67C13.2262 14.8845 13.5237 15.0032 13.8325 15.0005C14.1413 14.9979 14.4367 14.874 14.6551 14.6556C14.8734 14.4373 14.9973 14.1419 15 13.8331C15.0026 13.5243 14.8839 13.2268 14.6694 13.0047L9.67235 8.00765L14.6694 3.0106Z"></path>
+        </svg>
+    </div>
+
+    <div class="sidebar-content-wrap">
+        <h5 class="title">POINT ONE ZERO</h5>
+
+        <div class="address-area">
+            <h5>Office Location</h5>
+            <a href="#">25 Palmer Square, Princeton, NJ 08542, US</a>
+        </div>
+
+        <div class="contact-area">
+            <h5>Contact Info</h5>
+            <ul class="contact-list">
+                <li class="single-contact">
+                    <div class="icon">
+                        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path d="M9.07059 7.78198L7.89814 8.9584C7.42269 9.43552 6.58613 9.4458 6.1004 8.9584L4.9279 7.78198L0.716797 12.0068C0.873548 12.0792 1.04638 12.1225 1.23011 12.1225H12.7684C12.9522 12.1225 13.1249 12.0793 13.2816 12.0068L9.07059 7.78198Z"></path>
+                                <path d="M12.7687 2.27942H1.23039C1.04665 2.27942 0.873822 2.32267 0.717125 2.39516L5.21698 6.90995C5.21729 6.91025 5.21764 6.9103 5.21794 6.9106C5.21813 6.9108 5.21825 6.91105 5.2183 6.91131L6.68145 8.3793C6.83686 8.53471 7.16228 8.53471 7.3177 8.3793L8.78055 6.91156C8.78055 6.91156 8.7809 6.9109 8.7812 6.9106C8.7812 6.9106 8.78186 6.91025 8.78216 6.90995L13.2819 2.39513C13.1252 2.32262 12.9524 2.27942 12.7687 2.27942Z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <a href="mailto:admin@pointonezero.com">admin@pointonezero.com</a>
+                </li>
+
+                <li class="single-contact">
+                    <div class="icon">
+                        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path d="M12.8766 9.18937C12.0195 9.18937 11.1779 9.05531 10.3804 8.79176C9.98956 8.65846 9.50915 8.78075 9.27064 9.02571L7.69648 10.214C5.87091 9.23954 4.74639 8.11538 3.7852 6.30352L4.93856 4.77038C5.23821 4.47113 5.34569 4.03399 5.21692 3.62384C4.95223 2.82212 4.81777 1.98092 4.81777 1.12342C4.81781 0.503962 4.31385 0 3.69442 0H1.12339C0.503962 0 0 0.503962 0 1.12339C0 8.22363 5.77637 14 12.8766 14C13.496 14 14 13.496 14 12.8766V10.3127C14 9.69333 13.496 9.18937 12.8766 9.18937Z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <a href="tel:+16789014328">(678) 901-4328</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="contact.html" class="primary-btn1">
+            <span>Contact Us</span>
+            <span>Contact Us</span>
+        </a>
+    </div>
+</div>
+
+    <!-- header Section Start-->
+    <header class="header7 style-2">
+        <div class="container-fluid one d-flex flex-nowrap align-items-center justify-content-between">
+            <div class="company-logo">
+                <a href="index.html"><img alt="image" src="assets/img/header-logo-black.svg"></a>
+            </div>
+            <div class="main-menu">
+                <div class="mobile-logo-area d-lg-none d-flex align-items-center justify-content-between">
+                    <a href="index.html" class="mobile-logo-wrap">
+                        <img alt="image" src="assets/img/header-logo-black.svg">
+                    </a>
+                    <div class="menu-close-btn">
+                        <i class="bi bi-x"></i>
+                    </div>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-single-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="menu-single-item">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li class="menu-single-item">
+                        <a href="solutions.html">Tools &amp; Accelerators</a>
+                    </li>
+                    <li class="menu-single-item">
+                        <a href="team.html">Team</a>
+                    </li>
+                    <li class="menu-single-item">
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li class="menu-single-item">
+                        <a href="career.html">Career</a>
+                    </li>
+                    <li class="menu-single-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="right-sidebar-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="M4.6142 0.138593C3.82636 -0.0461926 3.00645 -0.0461926 2.21861 0.138593C1.71263 0.257272 1.24984 0.514861 0.882348 0.882352C0.514858 1.24984 0.257268 1.71264 0.138589 2.21862C-0.0461965 3.00645 -0.0461965 3.82636 0.138589 4.6142C0.257268 5.12018 0.514858 5.58297 0.882348 5.95046C1.24984 6.31796 1.71263 6.57554 2.21861 6.69422C3.00645 6.87904 3.82636 6.87904 4.6142 6.69422C5.12017 6.57554 5.58297 6.31796 5.95046 5.95046C6.31795 5.58297 6.57554 5.12018 6.69422 4.6142C6.87904 3.82637 6.87904 3.00645 6.69422 2.21862C6.57554 1.71264 6.31795 1.24984 5.95046 0.882352C5.58297 0.514861 5.12017 0.257272 4.6142 0.138593ZM4.6142 9.30581C3.82636 9.12099 3.00645 9.12099 2.21861 9.30581C1.71263 9.42449 1.24984 9.68208 0.882348 10.0496C0.514858 10.4171 0.257268 10.8799 0.138589 11.3858C-0.0461965 12.1737 -0.0461965 12.9936 0.138589 13.7814C0.257268 14.2874 0.514858 14.7502 0.882348 15.1177C1.24984 15.4852 1.71263 15.7428 2.21861 15.8614C3.00645 16.0462 3.82635 16.0462 4.6142 15.8614C5.12017 15.7428 5.58297 15.4852 5.95046 15.1177C6.31795 14.7502 6.57554 14.2874 6.69422 13.7814C6.87904 12.9936 6.87904 12.1737 6.69422 11.3858C6.57554 10.8799 6.31795 10.4171 5.95046 10.0496C5.58297 9.68208 5.12017 9.42449 4.6142 9.30581ZM13.7814 0.138593C12.9936 -0.0461926 12.1737 -0.0461926 11.3858 0.138593C10.8798 0.257272 10.4171 0.514861 10.0496 0.882352C9.68207 1.24984 9.42448 1.71264 9.3058 2.21862C9.12099 3.00645 9.12099 3.82637 9.3058 4.6142C9.42448 5.12018 9.68207 5.58297 10.0496 5.95046C10.4171 6.31796 10.8798 6.57554 11.3858 6.69422C12.1737 6.87904 12.9936 6.87904 13.7814 6.69422C14.2874 6.57554 14.7502 6.31796 15.1177 5.95046C15.4852 5.58297 15.7428 5.12018 15.8614 4.6142C16.0462 3.82636 16.0462 3.00646 15.8614 2.21862C15.7428 1.71264 15.4852 1.24984 15.1177 0.882352C14.7502 0.514861 14.2874 0.257272 13.7814 0.138593ZM13.7814 9.30581C12.9936 9.12099 12.1737 9.12099 11.3858 9.30581C10.8798 9.42449 10.4171 9.68208 10.0496 10.0496C9.68207 10.4171 9.42448 10.8799 9.3058 11.3858C9.12099 12.1737 9.12099 12.9936 9.3058 13.7814C9.42448 14.2874 9.68207 14.7502 10.0496 15.1177C10.4171 15.4852 10.8798 15.7428 11.3858 15.8614C12.1737 16.0462 12.9936 16.0462 13.7814 15.8614C14.2874 15.7428 14.7502 15.4852 15.1177 15.1177C15.4852 14.7502 15.7428 14.2874 15.8614 13.7814C16.0462 12.9936 16.0462 12.1737 15.8614 11.3858C15.7428 10.8799 15.4852 10.4171 15.1177 10.0496C14.7502 9.68208 14.2874 9.42449 13.7814 9.30581Z"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sidebar-button mobile-menu-btn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="M1.03556 2.52631H8.41896C8.99112 2.52631 9.45456 1.96107 9.45456 1.26316C9.45456 0.565247 8.99112 0 8.41896 0H1.03556C0.463399 0 0 0.565247 0 1.26316C0 1.96107 0.463399 2.52631 1.03556 2.52631Z"/>
+                            <path d="M0.984016 9.26267H15.016C15.5597 9.26267 16 8.6974 16 7.99948C16 7.30157 15.5597 6.73633 15.016 6.73633H0.984016C0.440337 6.73633 0 7.30157 0 7.99948C0 8.6974 0.440337 9.26267 0.984016 9.26267Z"/>
+                            <path d="M15.0441 13.4736H8.22859C7.70046 13.4736 7.27271 14.0389 7.27271 14.7367C7.27271 15.4347 7.70046 15.9999 8.22859 15.9999H15.0441C15.5722 15.9999 16 15.4347 16 14.7367C16 14.0389 15.5722 13.4736 15.0441 13.4736Z"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header Section End-->
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Breadcrumb Section Start -->
+            <div class="breadcrumb-section mb-150">
+                <div class="container mb-70">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-10">
+                            <div class="breadcrumb-content">
+                                <h1>Contact Us</h1>
+                                <ul class="breadcrumb-list">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li>
+                                        <svg width="25" height="6" viewBox="0 0 25 6" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 2.5L0 0.113249V5.88675L5 3.5V2.5ZM20 3.5L25 5.88675V0.113249L20 2.5V3.5ZM4.5 3.5H20.5V2.5H4.5V3.5Z"></path>
+                                        </svg>
+                                        Contact Us
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb Section End -->
+
+            <!-- Contact Page Start -->
+            <div class="contact-page mb-150">
+              <div class="container one">
+                <div class="contact-section-wrap">
+                  <div class="contact-two-col">
+
+                    <!-- LEFT: Info + Map -->
+                    <div class="contact-left-panel">
+                      <div class="contact-brand-logo">
+                        <img src="assets/img/header-logo-black.svg" alt="Point One Zero" style="width: 180px; height: auto; margin-bottom: 32px; display: block;">
+                      </div>
+                      <div>
+                        <span class="contact-eyebrow">Let's Collaborate</span>
+                        <h2>Let's Build Something Great Together</h2>
+                      </div>
+
+                      <ul class="contact-info-list">
+                        <li>
+                          <span class="ci-label">Phone</span>
+                          <a href="tel:+16789014328">(678) 901-4328</a>
+                        </li>
+                        <li>
+                          <span class="ci-label">Email</span>
+                          <a href="mailto:admin@pointonezero.com">admin@pointonezero.com</a>
+                        </li>
+                        <li>
+                          <span class="ci-label">Office</span>
+                          <a href="#">25 Palmer Square, Princeton, NJ 08542, US</a>
+                        </li>
+                      </ul>
+
+                      <div class="contact-map-embed">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.5647631857846!2d90.36311167605992!3d23.83407118555764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c14c8682a473%3A0xa6c74743d52adb88!2sEgens%20Lab!5e0!3m2!1sen!2sbd!4v1700138349574!5m2!1sen!2sbd"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                      </div>
+                    </div>
+
+                    <!-- RIGHT: Form -->
+                    <div class="contact-right-panel">
+                      <h3>I'm interested in...</h3>
+
+                      <div class="interest-tags" id="interestTags">
+                        <span class="interest-tag" data-val="Web Development">Web Development</span>
+                        <span class="interest-tag" data-val="UI/UX Design">UI/UX Design</span>
+                        <span class="interest-tag" data-val="Digital Marketing">Digital Marketing</span>
+                        <span class="interest-tag" data-val="Branding &amp; Creative">Branding &amp; Creative</span>
+                        <span class="interest-tag" data-val="SaaS Application">SaaS Application</span>
+                        <span class="interest-tag" data-val="Motion Design">Motion Design</span>
+                        <span class="interest-tag" data-val="3D Art &amp; Direction">3D Art &amp; Direction</span>
+                        <span class="interest-tag" data-val="Product Design">Product Design</span>
+                      </div>
+
+                      <div class="contact-form-grid">
+                        <div class="form-field">
+                          <label for="cf-name">Full Name</label>
+                          <input id="cf-name" type="text" placeholder="Mr. Daniel Robert">
+                        </div>
+                        <div class="form-field">
+                          <label for="cf-email">Email Address</label>
+                          <input id="cf-email" type="email" placeholder="info@example.com">
+                        </div>
+                        <div class="form-field">
+                          <label for="cf-phone">Phone Number</label>
+                          <input id="cf-phone" type="text" placeholder="+1 (234) 567-580">
+                        </div>
+                        <div class="form-field">
+                          <label for="cf-company">Company</label>
+                          <input id="cf-company" type="text" placeholder="Company name">
+                        </div>
+                        <div class="form-field full-col">
+                          <label for="cf-message">Message</label>
+                          <textarea id="cf-message" placeholder="Write a short note"></textarea>
+                        </div>
+                        <div class="form-field full-col">
+                          <div class="agree-row">
+                            <input type="checkbox" id="cf-agree">
+                            <label for="cf-agree">
+                              By submitting, you agree to our
+                              <a href="terms-condition.html">privacy policy &amp; terms</a>.
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button class="contact-submit-btn" id="cf-submit">Submit Enquiry &#x2197;</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Contact Page End -->
+
+            <!-- home1 Footer Section Start -->
+            <footer class="poz-footer">
+              <div class="poz-footer-top">
+                <div>
+                  <a href="index.html" class="poz-logo">Point One Zero</a>
+                  <p class="poz-tagline">Let's bring your vision to life</p>
+                </div>
+                <div class="poz-contact">
+                  <a href="#">25 Palmer Square, Princeton, NJ 08542, US</a>
+                  <span class="sep">&middot;</span>
+                  <a href="mailto:admin@pointonezero.com">admin@pointonezero.com</a>
+                  <span class="sep">&middot;</span>
+                  <a href="tel:6789014328">(678) 901-4328</a>
+                  <div class="poz-social">
+                    <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="poz-footer-bottom">
+                <ul class="poz-nav">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="solutions.html">Solutions</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="career.html">Careers</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms &amp; Conditions</a></li>
+                </ul>
+                <p class="poz-copy">&copy; Copyright 2026 <a href="#">Point One Zero</a> &middot; All Rights Reserved.</p>
+              </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!--  Main jQuery  -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <!-- Popper and Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Swiper slider JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <!-- Waypoints JS -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- Counterup JS -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Marquee JS -->
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <!-- Gsap JS -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/Draggable.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/ScrambleTextPlugin.min.js"></script>
+    <!-- FancyBox JS -->
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/confetti.browser.min.js"></script>
+    <script src="assets/js/three.js"></script>
+    <script src="assets/js/hover-effect.umd.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+      // Interest tag toggle
+      document.querySelectorAll('.interest-tag').forEach(function(tag) {
+        tag.addEventListener('click', function() {
+          this.classList.toggle('active');
+        });
+      });
+    </script>
+
+</body>
+
+</html>
